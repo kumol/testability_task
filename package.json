@@ -1,0 +1,24 @@
+{
+  "name": "conduit-playwright-framework",
+  "version": "1.0.0",
+  "description": "Playwright E2E test framework for conduit.bondaracademy.com (POM + TypeScript)",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:auth": "playwright test --project=auth-setup",
+    "report": "playwright show-report",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "typescript", "pom", "automation", "conduit"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "typescript": "^6.0.3"
+  }
+}
